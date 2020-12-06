@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="TimeSeries_Displacement" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="73064" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="73064 3" NumberType="UInt" Format="HDF">Randomized_BowTie_6.h5:/Mesh/0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="36793 2" Format="HDF">Randomized_BowTie_6.h5:/Mesh/0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="0" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="36793 3" Format="HDF">Randomized_BowTie_6.h5:/VisualisationVector/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="TimeSeries_Strain" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="73064" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="73064 3" NumberType="UInt" Format="HDF">Randomized_BowTie_6.h5:/Mesh/1/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="36793 2" Format="HDF">Randomized_BowTie_6.h5:/Mesh/1/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="1" />
+        <Attribute Name="Strain" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="36793 9" Format="HDF">Randomized_BowTie_6.h5:/VisualisationVector/1</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="TimeSeries_Stress" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="73064" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="73064 3" NumberType="UInt" Format="HDF">Randomized_BowTie_6.h5:/Mesh/2/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="36793 2" Format="HDF">Randomized_BowTie_6.h5:/Mesh/2/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="2" />
+        <Attribute Name="Stress" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="36793 9" Format="HDF">Randomized_BowTie_6.h5:/VisualisationVector/2</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
