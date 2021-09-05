@@ -5,4 +5,4 @@ This repository contains the iPython notebook with a linear thermoelasticity wor
 
 Coordinates.py is the python script used to check for overlapping geometries. Modify the .geo files and Coordinates.py for different geometries. 
 
-Require installation of FEniCS to run the code.
+Requires installation of FEniCS to run the code.
